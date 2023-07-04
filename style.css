@@ -1,0 +1,92 @@
+:root {
+    --preto-massa: #1a1a1a;
+    --preto-elegante: #242424;
+    --azulzin: #646cff;
+    --escuro-massa: #213547;
+    --branco-estiloso: #f9f9f9;
+    --azulin: #747bff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #f9f9f9;
+    margin: 15px 30px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--preto-massa);
+    display: flex;
+}
+
+.botao {
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    border-style:double;
+    margin: 3px;
+    font-size: 18px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: var(--preto-elegante);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100vw;
+    background-color: var(--preto-elegante);
+}
+
+footer p {
+    color: var(--branco-estiloso);
+    margin: 15px 10px;
+}
+
+.calculadora {
+    margin: 160px auto;
+    width: 300px;
+    height: 60vh;
+    border: 2px solid var(--branco-estiloso);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:4px 4px 4px rgba(256, 256, 256, 0.5);
+}
+
+.display {
+    width: 260px;
+    height: 100px;
+    background-color: var(--branco-estiloso);
+    margin: 25px;
+    border-radius: 10px;
+    padding-top: 60px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.not-num {
+    background-color: var(--azulin);
+}
+
+.exibicao {
+    text-align: right;
+    font-size: 20px;
+    margin: 3px;
+}
