@@ -34,6 +34,10 @@ body {
     font-size: 18px;
 }
 
+.botao:hover {
+    cursor: pointer;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -55,10 +59,15 @@ footer p {
     margin: 15px 10px;
 }
 
+#ponto, #igual {
+    background-color: var(--azulin);
+}
+
+
 .calculadora {
     margin: 160px auto;
     width: 300px;
-    height: 60vh;
+    min-height: 450px;;
     border: 2px solid var(--branco-estiloso);
     border-radius: 12px;
     display: flex;
@@ -71,7 +80,7 @@ footer p {
     width: 260px;
     height: 100px;
     background-color: var(--branco-estiloso);
-    margin: 25px;
+    margin: 22px;
     border-radius: 10px;
     padding-top: 60px;
 }
