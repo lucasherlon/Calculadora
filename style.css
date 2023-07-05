@@ -32,10 +32,16 @@ body {
     border-style:double;
     margin: 3px;
     font-size: 18px;
+    transition: transform 0.5s ease;
 }
 
 .botao:hover {
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botao:active {
+    background-color: rgb(127, 189, 255);
 }
 
 header {

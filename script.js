@@ -6,11 +6,8 @@ const igual = document.getElementById("igual");
 const ponto = document.getElementById("ponto");
 const exibicao = document.querySelector(".exibicao");
 const limpar = document.getElementById("limpar");
-const abpr = document.getElementById("abpr");
-const fchp = document.getElementById("fchp");
 let op = false;
 let checkPoint = false;
-let abp = false;
 let operacao = "";
 
 numeros.forEach((e) => {
@@ -33,7 +30,6 @@ limpar.addEventListener("click", () => {
     op = false;
     checkPoint = false;
     operacao = "";
-    console.log(op)
 })
 
 opr.forEach((e) => {
@@ -48,20 +44,8 @@ opr.forEach((e) => {
             operacao += evt.target.value;
             console.log(evt.target.value);
         }
-        console.log(op);
     })
 });
-
-abpr.addEventListener("click", () => {
-        exibicao.innerHTML += evt.target.value;
-        operacao += evt.target.value;
-        abp = true;
-})
-
-fchp.addEventListener("click", () => {
-    exibicao.innerHTML += evt.target.value;
-    operacao += evt.target.value;
-})
 
 igual.addEventListener("click", () => {
     op = false;
@@ -78,4 +62,4 @@ ponto.addEventListener("click", (evt) => {
         checkPoint = true;
     }
 })
-console.log("estou aqui");
+
