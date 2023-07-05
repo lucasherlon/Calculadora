@@ -59,7 +59,7 @@ footer p {
     margin: 15px 10px;
 }
 
-#ponto, #igual {
+#ponto, #igual, #abpr, #fchp, #limpar {
     background-color: var(--azulin);
 }
 
@@ -90,7 +90,7 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.not-num {
+.opr {
     background-color: var(--azulin);
 }
 
