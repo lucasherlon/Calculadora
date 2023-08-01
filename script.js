@@ -9,14 +9,16 @@ const limpar = document.getElementById("limpar");
 let op = false;
 let checkPoint = false;
 let operacao = "";
+let cl = false;
 
 numeros.forEach((e) => {
     e.addEventListener("click", (evt) => {
-        if(op) {
+        if(op || cl) {
             exibicao.innerHTML = "";
             exibicao.innerHTML += evt.target.value;
             operacao += evt.target.value;
             op = false;
+            cl = false;
         } else {
             exibicao.innerHTML += evt.target.value;
             operacao += evt.target.value;
@@ -29,6 +31,7 @@ limpar.addEventListener("click", () => {
     exibicao.innerHTML = "0";
     op = false;
     checkPoint = false;
+    cl = true;
     operacao = "";
 })
 
