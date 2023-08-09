@@ -54,11 +54,7 @@ igual.addEventListener("click", () => {
     op = false;
     checkPoint = false;
     const res = eval(operacao);
-    if(Number.isFinite(res) {
-         exibicao.innerHTML = res;
-    } else {
-        exibicao.innerHTML = "operação inválida";
-    }
+     exibicao.innerHTML = res;
 })
 
 ponto.addEventListener("click", (evt) => {
