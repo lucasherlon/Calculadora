@@ -54,12 +54,11 @@ igual.addEventListener("click", () => {
     op = false;
     checkPoint = false;
     const res = eval(operacao);
-    if (Number.isFinite(res)){
+    if (res == "infinity"){
         exibicao.innerHTML = res;
     } else {
         exibicao.innerHTNL = "operacao invalida";
     }
-     
 })
 
 ponto.addEventListener("click", (evt) => {
