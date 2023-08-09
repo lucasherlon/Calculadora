@@ -33,6 +33,7 @@ limpar.addEventListener("click", () => {
     exibicao.innerHTML = "0";
     op = false;
     checkPoint = false;
+    opInv = false;
     cl = true;
     operacao = "";
 })
