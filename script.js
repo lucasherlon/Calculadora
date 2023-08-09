@@ -8,17 +8,19 @@ const exibicao = document.querySelector(".exibicao");
 const limpar = document.getElementById("limpar");
 let op = false;
 let checkPoint = false;
+let opInv = false;
 let operacao = "";
 let cl = false;
 
 numeros.forEach((e) => {
     e.addEventListener("click", (evt) => {
-        if(op || cl) {
+        if(op || cl || opInv) {
             exibicao.innerHTML = "";
             exibicao.innerHTML += evt.target.value;
             operacao += evt.target.value;
             op = false;
             cl = false;
+            opInv = false;
         } else {
             exibicao.innerHTML += evt.target.value;
             operacao += evt.target.value;
@@ -57,6 +59,7 @@ igual.addEventListener("click", () => {
     if(Number.isFinite(res)) {
         exibicao.innerHTML = res;
     } else {
+        opInv= true;
         exibicao.innerHTML = "operacao invalida";
     }
 
