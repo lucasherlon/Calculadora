@@ -54,7 +54,7 @@ igual.addEventListener("click", () => {
     op = false;
     checkPoint = false;
     const res = eval(operacao);
-    if(Number.isFinity(res) {
+    if(Number.isFinite(res) {
          exibicao.innerHTML = res;
     } else {
         exibicao.innerHTML = "operação inválida";
