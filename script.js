@@ -54,6 +54,9 @@ igual.addEventListener("click", () => {
     op = false;
     checkPoint = false;
     const res = eval(operacao);
+    if (res == infinity) {
+        res = "operação indevida";
+    }
     exibicao.innerHTML = res;
 })
 
